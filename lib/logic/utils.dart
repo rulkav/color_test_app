@@ -5,9 +5,10 @@ import 'package:flutter/material.dart';
 /// This function generates new random color
 Color generateRandomColor() {
   final Random random = Random();
-  final int redColor = random.nextInt(255);
-  final int greenColor = random.nextInt(255);
-  final int blueColor = random.nextInt(255);
+
+  final int redColor = random.nextInt(256);
+  final int greenColor = random.nextInt(256);
+  final int blueColor = random.nextInt(256);
   const double opacity = 1;
 
   final Color newColor =
